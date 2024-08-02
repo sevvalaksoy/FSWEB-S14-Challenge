@@ -43,8 +43,7 @@ public class Hamburger{
         this.addition4Price = addition4Price;
     }
     public double itemizeHamburger(){
-        System.out.println(this);
-        System.out.println(("Price:" + getPrice()));
+        System.out.println(this + ("Price:" + getPrice()));
         return getPrice();
     }
     public double totalPrice(){
@@ -101,12 +100,9 @@ public class Hamburger{
                 "Name:" + name + '\n' +
                 "Meat:" + meat + '\n' +
                 "BreadRollType:" + breadRollType + '\n' +
-                        (getAddition1Name()==null?"":"Addition1:" + addition1Name)
-                + '\n' +
-                        (getAddition2Name()==null?"":"Addition2:" + addition2Name)
-                 + '\n' +
-                        (getAddition3Name()==null?"":"Addition3:" + addition3Name)
-                 + '\n' +
+                        (getAddition1Name()==null?"":"Addition1:" + addition1Name + '\n') +
+                        (getAddition2Name()==null?"":"Addition2:" + addition2Name + '\n') +
+                        (getAddition3Name()==null?"":"Addition3:" + addition3Name + '\n') +
                         (getAddition4Name()==null?"":"Addition4:" + addition4Name);
     }
 }

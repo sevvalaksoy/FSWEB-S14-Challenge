@@ -17,6 +17,8 @@ public class Main {
 
         hamburger.itemizeHamburger();
 
+        System.out.println("----------------------------");
+
         HealthyBurger healthyBurger = new HealthyBurger("Vegan Burger", 5.67, "Sandwich");
 
         healthyBurger.addHamburgerAddition1("Egg", 5.43);
@@ -24,6 +26,8 @@ public class Main {
         healthyBurger.addHealthyAddition1("Lentils", 3.41);
 
         healthyBurger.itemizeHamburger();
+
+        System.out.println("----------------------------");
 
         DeluxeBurger db = new DeluxeBurger();
 

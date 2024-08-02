@@ -36,14 +36,8 @@ public class HealthyBurger extends Hamburger{
     }
     @Override
     public double itemizeHamburger() {
-        System.out.println(this);
-        if(!(getHealthyExtra1Name()==null)) {
-            System.out.println("HealthyAddition1:" + getHealthyExtra1Name());
-        }
-        if(!(getHealthyExtra2Name()==null)) {
-            System.out.println("HealthyAddition2:" + getHealthyExtra2Name());
-        }
-        System.out.println(("Price:" + getPrice()));
+        System.out.println(this + (getHealthyExtra1Name()==null?"":"HealthyAddition1:" + getHealthyExtra1Name())
+        + (getHealthyExtra2Name()==null?"":"HealthyAddition2:" + getHealthyExtra2Name())+ '\n' + "Price:" + getPrice());
         return getPrice();
     }
 
